@@ -1,0 +1,17 @@
+.Task {
+  background-color: gainsboro;
+  width: 50rem;
+  height: 10rem;
+  margin: 10px;
+}
+
+.Task--Title {
+  font-size: 2em;
+  margin-left: 50px;
+  margin-top: 50px;
+  background-color: aquamarine;
+}
+
+.Task--Description {
+  background-color: rosybrown;
+}

@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './TaskList.css'
 import Task from './Task.js'
+import axios from 'axios'
+import MongoClient from 'mongodb'
 
-export default function TaskList() {
+
+const TaskList = () => {
+
+    const loadTasks = async () => {
+        const res = await axios.get('http://localhost:4000')
+        console.log(res)
+    }
+
+    useEffect(() => {
+        loadTasks()
+    }, [])
+
     return (
         <div className='TaskList'>
             <h2>Tasks</h2>
@@ -15,3 +28,5 @@ export default function TaskList() {
         </div>
     )
 }
+
+export default TaskList

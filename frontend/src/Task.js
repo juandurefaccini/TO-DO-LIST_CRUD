@@ -24,7 +24,7 @@ class Task extends React.Component {
 
         if (!isBeignEdited) {
             return <Card className="Task">
-                <Card.Header bg="blue">
+                <Card.Header>
                     {this.props.name}
                 </Card.Header>
                 <Card.Body>
